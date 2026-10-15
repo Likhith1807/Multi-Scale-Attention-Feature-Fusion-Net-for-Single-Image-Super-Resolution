@@ -9,5 +9,5 @@ pillow==12.3.0
 scipy==1.18.1
 setuptools==78.1.0
 sympy==1.14.0
-torch==2.13.0+cu130
+torch==2.14.1
 typing_extensions==4.16.0
