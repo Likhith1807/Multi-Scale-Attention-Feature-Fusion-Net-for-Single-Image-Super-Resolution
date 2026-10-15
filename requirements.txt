@@ -1,0 +1,4 @@
+# Install a CUDA-enabled torch build first using the official selector.
+numpy>=1.24,<3
+Pillow>=10,<13
+scipy>=1.10,<2

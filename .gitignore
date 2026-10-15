@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C/C++ build artifacts & shared libs
+*.so
+*.pyd
+*.dll
+
+# Virtual Environments
+.venv*/
+venv/
+ENV/
+env/
+
+# Large Dataset Archives and Raw Images (DIV2K)
+data/archives/*
+!data/archives/PUT_ZIPS_HERE.txt
+data/DIV2K_train_HR/
+data/DIV2K_train_LR_bicubic/
+data/DIV2K_valid_HR/
+data/DIV2K_valid_LR_bicubic/
+data/**/*.png
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.zip
+data/**/*.part
+data/**/*.tar*
+data/**/*.gz
+
+# Experiment outputs, logs, model checkpoints, and run dumps
+runs/*
+!runs/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.token
+credentials.json
+
+# IDEs & Editor configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+
+# Operating System files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Nested accidental duplicate directory
+SISR_Computer-Vision/
