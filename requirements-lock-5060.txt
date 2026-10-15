@@ -1,4 +1,4 @@
-filelock==3.32.3
+filelock==4.1.0
 fsspec==2026.7.0
 Jinja2==3.1.6
 MarkupSafe==3.0.3
