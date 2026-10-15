@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msaf-net"
+version = "1.0.0"
+description = "Multi-Scale Attention Feature Fusion Network for Single-Image Super-Resolution (SISR)"
+readme = "README.md"
+authors = [
+  { name = "Likhith1807", email = "Likhith1807@users.noreply.github.com" }
+]
+license = { text = "MIT" }
+keywords = ["super-resolution", "deep-learning", "pytorch", "computer-vision", "attention-mechanism", "div2k", "sisr"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.14",
+  "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3",
+  "pillow>=10,<13",
+  "scipy>=1.10,<2",
+  "torch>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "flake8>=6.0",
+  "black>=23.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Likhith1807/Multi-Scale-Attention-Feature-Fusion-Net-for-Single-Image-Super-Resolution"
+"Bug Tracker" = "https://github.com/Likhith1807/Multi-Scale-Attention-Feature-Fusion-Net-for-Single-Image-Super-Resolution/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["self_test.py", "test_*.py"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]

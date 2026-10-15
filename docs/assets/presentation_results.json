@@ -1,0 +1,49 @@
+{
+  "checkpoint": "runs\\baseline_x4_pilot_5060\\best.pt",
+  "model_config": {
+    "scale": 4,
+    "features": 48,
+    "blocks": 6,
+    "fusion": "learned"
+  },
+  "selection": "first sorted DIV2K validation image IDs",
+  "zoom_selection": "maximum Bicubic-vs-HR RGB MAE; model output excluded",
+  "images": [
+    {
+      "id": "0801",
+      "comparison": "0801_comparison.png",
+      "model": {
+        "psnr_y": 29.617834955149046,
+        "ssim_y": 0.8284586207829141
+      },
+      "bicubic": {
+        "psnr_y": 29.104453481642516,
+        "ssim_y": 0.8080255986335344
+      }
+    },
+    {
+      "id": "0802",
+      "comparison": "0802_comparison.png",
+      "model": {
+        "psnr_y": 35.56276151390356,
+        "ssim_y": 0.9043030777588011
+      },
+      "bicubic": {
+        "psnr_y": 35.081614504712,
+        "ssim_y": 0.8963038408489171
+      }
+    },
+    {
+      "id": "0803",
+      "comparison": "0803_comparison.png",
+      "model": {
+        "psnr_y": 35.88561526018252,
+        "ssim_y": 0.9557705594825427
+      },
+      "bicubic": {
+        "psnr_y": 35.27273011610442,
+        "ssim_y": 0.9528733262412424
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+name: Feature Request
+description: Suggest an idea or architectural improvement for MSAF-Net
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an enhancement! Please describe the motivation and implementation idea.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Motivation / Problem Statement
+      description: Is your feature request related to a specific bottleneck, degradation model, or architectural limitation?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution or Architectural Change
+      description: Describe your proposed modification or new module.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or baseline comparisons considered.
