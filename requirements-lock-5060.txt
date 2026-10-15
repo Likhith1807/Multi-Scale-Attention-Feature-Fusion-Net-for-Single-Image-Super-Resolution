@@ -7,7 +7,7 @@ networkx==3.6.1
 numpy==2.5.3
 pillow==12.3.0
 scipy==1.18.1
-setuptools==78.1.0
+setuptools==84.0.0
 sympy==1.14.0
 torch==2.13.0+cu130
 typing_extensions==4.16.0
